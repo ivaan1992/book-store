@@ -23,9 +23,14 @@ The purpose of this project is show my abilities making projects with React.
 
 ## Getting Started 
 
-In the project directory, you can run:
+- Run git clone on this project at the desired directory:
+     ```
+    git clone https://github.com/ivaan1992/book-store.git
+     ```
+- Run `npm install` to install the necessary packages to run locally.
 
-### `npm start`
+- After installing, run `npm start` and your default browser will open the webpage. 
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
