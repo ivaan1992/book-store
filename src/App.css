@@ -1,7 +1,8 @@
-header, ul, li {
+header,
+ul,
+li {
   display: flex;
   margin-right: 20px;
   justify-content: end;
   align-items: center;
 }
-

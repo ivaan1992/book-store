@@ -4,10 +4,15 @@ import Button from './UI/button';
 
 const Books = () => {
   const [books] = useState([]);
+
   return (
     <div>
-        <Form id="Add-books" />
-        <Button />
+      {books.map((book) => (
+        <div key={book.id}>{book}</div>
+      ))}
+
+      <Form id="books" />
+      <Button />
     </div>
   );
 };
