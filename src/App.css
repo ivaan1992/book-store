@@ -6,3 +6,15 @@ li {
   justify-content: end;
   align-items: center;
 }
+
+.library {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+}
