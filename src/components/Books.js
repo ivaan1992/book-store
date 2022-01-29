@@ -1,31 +1,22 @@
 import React from 'react';
-import Form from './UI/form';
+import { useSelector } from 'react-redux';
+import BookCard from './BookCard';
+import BookForm from './BookForm';
 
-const bookInfo = {
-  title: 'Romeo & Juliet',
-  author: 'Shakespeare',
-  id: 1,
+const Books = () => {
+  const BookList = useSelector((state) => state.booksReducer);
+  return (
+    <>
+      <h2>Book container</h2>
+      <ul className="library">
+        {BookList.map((book) => (
+          <BookCard key={book.title} book={book} />
+        ))}
+      </ul>
+
+      <BookForm />
+    </>
+  );
 };
-
-const List = () => (
-  <li>
-    {bookInfo.title}
-    <br />
-    {bookInfo.author}
-    <br />
-    {bookInfo.id}
-    <br />
-    <button type="button">Remove</button>
-  </li>
-);
-
-const Books = () => (
-  <div>
-    <ul>
-      <List />
-    </ul>
-    <Form id="books" />
-  </div>
-);
 
 export default Books;
