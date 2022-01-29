@@ -10,13 +10,14 @@ li {
 .library {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
 .bookInfo {
   display: flex;
-  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
 }
 
 .book-form {

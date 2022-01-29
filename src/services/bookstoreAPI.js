@@ -6,9 +6,9 @@ export default class BookstoreAPI {
 
   static getBooksFromAPI = async () => {
     const url = `${this.BASEURL}/apps/${this.ID}/books`;
-    const response = url;
-    await fetch(url);
-    return response.json();
+    const response = await fetch(url);
+    const json = await response.json();
+    return json;
   };
 
   static addBookToAPI = async (data) => {
