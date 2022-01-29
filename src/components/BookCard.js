@@ -9,11 +9,14 @@ const BookCard = ({ book }) => {
     removeBookAsync(book.id)(dispatchRemove);
   };
   return (
-    <li className="bookInfo">
+    <li className="bookInfo d-flex">
       <p>{book.id}</p>
-      <p>{book.title}</p>
-      <p>{book.author}</p>
-      <button type="button" onClick={handleRemoveBook}>
+      <div className="book-author">
+        <h3>{book.title}</h3>
+        <p className="author">{book.author}</p>
+
+      </div>
+      <button className="Remove" type="button" onClick={handleRemoveBook}>
         Remove
       </button>
     </li>

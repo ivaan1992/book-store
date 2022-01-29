@@ -14,8 +14,15 @@ const Books = () => {
     <>
       <h2>Book container</h2>
       <ul className="library">
-        {BookList.map(({ id, title, author }) => (
-          <BookCard key={id} book={{ id, title, author }} />
+        {BookList.map(({
+          id, title, author, category,
+        }) => (
+          <BookCard
+            key={id}
+            book={{
+              id, title, author, category,
+            }}
+          />
         ))}
       </ul>
 
