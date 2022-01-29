@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBook } from "../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/books';
 
 const BookForm = () => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState('');
   const dispatch = useDispatch();
   const handleChange = (event) => {
     setTitle(event.target.value);
   };
-  const [author, setAuthor] = useState("");
+  const [author, setAuthor] = useState('');
   const handleAuthor = (event) => {
     setAuthor(event.target.value);
   };
