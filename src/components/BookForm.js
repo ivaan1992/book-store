@@ -22,7 +22,7 @@ const BookForm = () => {
   };
   return (
     <>
-      <div>
+      <div className="book-form">
         <input
           id="bookInput"
           type="text"
