@@ -10,11 +10,22 @@ li {
 .library {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
 .bookInfo {
   display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.book-form {
+  width: 10%;
+  display: flex;
   flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
 }

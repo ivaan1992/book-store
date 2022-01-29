@@ -1,7 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Book Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project consist in create a library where you can add and remove books. 
+
+You have to make it with React and Redux.
 
 ## Screenshot
 
