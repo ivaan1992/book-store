@@ -28,6 +28,7 @@ const BookForm = () => {
   return (
     <>
       <div className="book-form">
+        <h2>ADD NEW BOOK</h2>
         <input
           id="bookInput"
           type="text"
@@ -47,7 +48,7 @@ const BookForm = () => {
           value={category}
           onChange={handleCategory}
         />
-        <button type="button" onClick={handleAddBook}>
+        <button className="Add" type="button" onClick={handleAddBook}>
           Add Book
         </button>
       </div>

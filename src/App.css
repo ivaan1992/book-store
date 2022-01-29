@@ -1,31 +1,93 @@
-header,
-ul,
-li {
-  display: flex;
-  margin-right: 20px;
-  justify-content: end;
-  align-items: center;
+* {
+  font-family: 'Lato', sans-serif;
 }
 
-.library {
+header {
+border: 3px solid #e8e8e8;
+display: flex;
+flex-direction: row ;
+height: 10vh;
+}
+
+.header {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.links {
+  margin-top: 30px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+}
+
+h1 {
+  margin-right: 100px;
+  color: #0290ff;
+}
+
+h2 {
+  color: #888888;
+  text-align: center;
+}
+
+.book-link {
+  margin-right: 40px;
+  list-style-type: none;
+  color: #000;
+}
+
+.categories-link {
+  color: #000;
 }
 
 .bookInfo {
-  display: flex;
-  width: 50%;
+  padding-left: 10%;
+  width: 80%;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 20px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.Remove {
+  width: 10rem;
+  height: 2.063rem;
+  background-color: #0290ff;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+}
+
+.author {
+  color: #4386bf;
+  text-align: center;
 }
 
 .book-form {
-  width: 10%;
-  display: flex;
-  flex-direction: column;
+  padding-left: 10%;
+  width: 80%;
 }
 
 input {
-  margin-bottom: 10px;
+  width: 20rem;
+  height: 3rem;
+  margin-right: 20px;
+}
+
+.Add {
+  width: 10rem;
+  height: 3.30rem;
+  background-color: #0290ff;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 3px;
+  border: none;
 }
