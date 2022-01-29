@@ -16,10 +16,14 @@ const BookForm = () => {
     };
     dispatch(addBook(newBook));
   };
+
+  // const input = document.getElementById('bookInput');
+  // input.value = '';
   return (
     <>
       <div>
         <input
+          id="bookInput"
           type="text"
           placeholder="Book title"
           value={title}
