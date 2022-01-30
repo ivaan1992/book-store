@@ -4,11 +4,11 @@
 }
 
 .App {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
 }
 
 .card {
@@ -18,7 +18,6 @@ height: 120vh;
   align-items: center;
   background-color: #fafafa;
 }
-
 
 header {
   width: 100%;
