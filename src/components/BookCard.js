@@ -9,13 +9,13 @@ const BookCard = ({ book }) => {
     removeBookAsync(book.id)(dispatchRemove);
   };
   return (
-    <div className="body">
+
       <li className="bookInfo d-flex">
-        <div className="book-author">
-          <p className="category">{book.category}</p>
+        <div className="book-author white">
+          <p className="category white">{book.category}</p>
           <h3>{book.title}</h3>
           {/* <p className="author">{book.author}</p> */}
-          <div className="d-flex">
+          <div className="d-flex white">
             <button className="li-buttons" type="button">Comments</button>
             <button className="li-buttons" onClick={handleRemoveBook} type="button">Remove</button>
             <button className="li-buttons" type="button">Edit</button>
@@ -43,8 +43,6 @@ const BookCard = ({ book }) => {
           <button className="Remove" type="button">Update progress</button>
         </div>
       </li>
-    </div>
-
   );
 };
 
