@@ -3,22 +3,32 @@
   background-color: #f5f6fa;
 }
 
+.App {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 120vh;
+}
+
+.card {
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+
 header {
   width: 100%;
   border: 3px solid #e8e8e8;
+  background-color: #fff;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   height: 15vh;
-  margin-bottom: 70px;
-}
-
-.header {
-  align-items: center;
-  width: 100%;
-  height: 8vh;
-  justify-content: flex-start;
+  margin-bottom: 30px;
 }
 
 .userdiv {
@@ -32,14 +42,17 @@ header {
 }
 
 .links {
-  margin-top: 30px;
-  padding-right: 34%;
   list-style-type: none;
   text-decoration: none;
+  width: 50vw;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
 }
 
 .a {
   text-decoration: none;
+  background-color: #fff;
 }
 
 .d-flex {
@@ -49,31 +62,43 @@ header {
 h1 {
   color: #0290ff;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 10%;
+  margin-right: 50px;
 }
 
 h2 {
   color: #888;
-  text-align: center;
+  text-align: start;
 }
 
 .book-link {
   margin-right: 40px;
   list-style-type: none;
   color: #000;
+  background-color: #fff;
 }
 
 .categories-link {
   color: #121212;
+  background-color: #fff;
+}
+
+.library {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
 }
 
 .bookInfo {
-  padding-left: 10%;
-  width: 80%;
-  border: 1px solid #e8e8e8;
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
   margin-bottom: 20px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
 }
 
 .Remove {
@@ -105,8 +130,9 @@ h2 {
 }
 
 .book-form {
-  padding-left: 10%;
-  width: 80%;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
 }
 
 input {
@@ -148,9 +174,11 @@ input {
 }
 
 .book-author {
+  width: auto;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  margin-right: 10%;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -200,9 +228,11 @@ div[data-anim~=base] {
 
 .left {
   margin-top: 20px;
-  width: 30%;
+  width: auto;
   justify-content: center;
   align-items: center;
+  margin-right: 10%;
+  background-color: transparent;
 }
 
 .completed {
@@ -214,8 +244,8 @@ div[data-anim~=base] {
 }
 
 .border {
-  width: 30%;
-  height: 13vh;
+  width: 30vw;
+  height: 20vh;
   border-left: 1px solid gray;
   flex-direction: column;
   margin-right: 30px;
@@ -232,4 +262,5 @@ div[data-anim~=base] {
 
 #bookInput {
   width: 40%;
+  background-color: transparent;
 }
