@@ -12,7 +12,6 @@ const Books = () => {
   }, []);
   return (
     <>
-      <h2>Book container</h2>
       <ul className="library">
         {BookList.map(({
           id, title, author, category,

@@ -8,10 +8,10 @@ const BookForm = () => {
   const handleChange = (event) => {
     setTitle(event.target.value);
   };
-  const [author, setAuthor] = useState('');
+  /* const [author, setAuthor] = useState('');
   const handleAuthor = (event) => {
     setAuthor(event.target.value);
-  };
+  }; */
   const [category, setCategory] = useState('');
   const handleCategory = (event) => {
     setCategory(event.target.value);
@@ -19,7 +19,7 @@ const BookForm = () => {
   const handleAddBook = () => {
     const newBook = {
       title,
-      author,
+      // author,
       category,
       id: Math.ceil(Math.random() * 10000),
     };
@@ -36,12 +36,12 @@ const BookForm = () => {
           value={title}
           onChange={handleChange}
         />
-        <input
+        {/* <input
           type="text"
           placeholder="author"
           value={author}
           onChange={handleAuthor}
-        />
+        /> */}
         <input
           type="text"
           placeholder="category"
