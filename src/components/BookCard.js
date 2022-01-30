@@ -9,6 +9,7 @@ const BookCard = ({ book }) => {
     removeBookAsync(book.id)(dispatchRemove);
   };
   return (
+<<<<<<< HEAD
     <div className="body">
       <li className="bookInfo d-flex">
         <div className="book-author">
@@ -16,6 +17,15 @@ const BookCard = ({ book }) => {
           <h3>{book.title}</h3>
           {/* <p className="author">{book.author}</p> */}
           <div className="d-flex">
+=======
+
+      <li className="bookInfo d-flex">
+        <div className="book-author white">
+          <p className="category white">{book.category}</p>
+          <h3>{book.title}</h3>
+          {/* <p className="author">{book.author}</p> */}
+          <div className="d-flex white">
+>>>>>>> master
             <button className="li-buttons" type="button">Comments</button>
             <button className="li-buttons" onClick={handleRemoveBook} type="button">Remove</button>
             <button className="li-buttons" type="button">Edit</button>
@@ -43,8 +53,11 @@ const BookCard = ({ book }) => {
           <button className="Remove" type="button">Update progress</button>
         </div>
       </li>
+<<<<<<< HEAD
     </div>
 
+=======
+>>>>>>> master
   );
 };
 
