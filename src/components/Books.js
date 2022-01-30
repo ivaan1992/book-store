@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAllBooksFromAPI } from '../redux/books/books';
+import Header from './Header';
 import BookCard from './BookCard';
 import BookForm from './BookForm';
 
@@ -12,14 +13,23 @@ const Books = () => {
   }, []);
   return (
     <>
-      <h2>Book container</h2>
-      <ul className="library">
-        {BookList.map(({ id, title, author }) => (
-          <BookCard key={id} book={{ id, title, author }} />
-        ))}
-      </ul>
+      <div className="card d-flex">
+        <Header />
+        <ul className="library">
+          {BookList.map(({
+            id, title, author, category,
+          }) => (
+            <BookCard
+              key={id}
+              book={{
+                id, title, author, category,
+              }}
+            />
+          ))}
+        </ul>
+        <BookForm />
+      </div>
 
-      <BookForm />
     </>
   );
 };

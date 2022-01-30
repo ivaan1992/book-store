@@ -7,9 +7,9 @@ You have to make it with React and Redux.
 
 ## Screenshot
 
-![Captura de pantalla de 2022-01-19 11-04-06](https://user-images.githubusercontent.com/73128809/150179657-a22eb9f4-b011-4e26-a685-244127e01079.png)
+![Captura de pantalla de 2022-01-29 19-13-50](https://user-images.githubusercontent.com/73128809/151683019-0409b856-789d-478a-aa30-4bb5f0ac8625.png)
 
-![Captura de pantalla de 2022-01-19 11-04-09](https://user-images.githubusercontent.com/73128809/150179572-e965e843-b8fb-408c-a56f-ae34d95d86d1.png)
+
 
 
 
